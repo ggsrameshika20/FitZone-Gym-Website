@@ -1,0 +1,130 @@
+/* This is the CSS section of FitZone_Services page */
+
+body {
+    background-color: #0c1a2b;
+    color: white;
+}
+
+/* Services section */
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff7b00;
+    padding-top: 130px; /* Navbar එකට ඉඩ */
+    margin-bottom: 40px;
+}
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.service-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-card {
+    background-color: #111f33; 
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    font-size: 24px;
+    margin: 15px 20px 8px;
+    color: #ff7b00; 
+}
+
+.service-card p {
+    font-size: 15px;
+    margin: 0 20px 15px;
+    color: #ddd;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.read-more {
+    margin: 0 20px;
+    color: #ff7b00;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(255, 123, 0, 0.35);
+    border-color: #ff7b00;
+}
+
+/* Table section */
+.table-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 25px;
+    color: #ff7b00;
+}
+
+.schedule-container {
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto 80px auto;
+    overflow-x: auto; /* Mobile වලදී horizontal scroll වීමට */
+}
+
+.schedule-table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background-color: #0d1e33;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.schedule-table thead tr {
+    background-color: #ff7b00;
+}
+
+.schedule-table th {
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+.schedule-table td {
+    padding: 18px 10px;
+    color: #e5e5e5;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #22344d;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #162a42;
+    transition: 0.3s;
+}

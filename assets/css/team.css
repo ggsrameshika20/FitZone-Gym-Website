@@ -1,0 +1,146 @@
+/* This is the CSS section of FitZone_Team page */
+
+body {
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../images/pic7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Team Section */
+.team-section {
+    width: 90%;
+    margin: auto;
+    padding-top: 130px; 
+    padding-bottom: 80px;
+}
+
+.team-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff7b00;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.team-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Team boxes */
+.team-card {
+    background: rgba(15, 25, 42, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.3s;
+}
+
+.team-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ff7b00;
+}
+
+.team-card .role {
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    background: rgba(20, 35, 58, 0.95);
+    border-color: #ff7b00;
+    box-shadow: 0 10px 20px rgba(255, 123, 0, 0.25);
+}
+
+.trainer-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e5e7eb;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.trainer-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.trainer-info ul li {
+    margin: 6px 0;
+    font-size: 14px;
+    color: #e5e7eb;
+}
+
+.trainer-info strong {
+    color: #ff7b00;
+    font-weight: 600;
+}
+
+.view-profile-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+    color: #ff7b00;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Responsiveness of Grid */
+@media (max-width: 1100px) {
+    .team-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-title {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 550px) {
+    .team-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-title {
+        font-size: 35px;
+    }
+
+    .team-card img {
+        height: 220px;
+    }
+}
