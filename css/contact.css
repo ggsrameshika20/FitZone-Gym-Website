@@ -1,0 +1,146 @@
+/* This is the CSS section of FitZone_Contact page */
+
+body {
+    background: url('../images/pic16.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 18, 36, 0.65); 
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 130px 20px 60px 20px; /* Navbar එකට ඉඩ තබා ඇත */
+    position: relative;
+    z-index: 2;
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff7a00;
+}
+
+.title-border {
+    width: 160px;
+    height: 5px;
+    background: #ff7a00;
+    border-radius: 3px;
+    margin: 15px auto 40px;
+}
+
+/* Contact Box */
+.contact-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-box {
+    background: rgba(17, 28, 51, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(4px);
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-box i {
+    font-size: 55px;
+    color: #ff7a00;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.contact-box:hover i {
+    transform: scale(1.15);
+}
+
+/* Form Title */
+.form-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff7a00;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.c-text {
+    width: 100%;
+    margin: 15px 0;
+    padding: 18px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #1e293b;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.c-text:focus {
+    box-shadow: 0 0 8px #ff7a00;
+}
+
+textarea.c-text {
+    height: 120px;
+    resize: none;
+}
+
+.c-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff7a00;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.c-btn:hover {
+    background: #e06900;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+    .title {
+        font-size: 38px;
+    }
+}
